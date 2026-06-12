@@ -17,6 +17,16 @@ Bu model, ham görüntü işlemek (Image Processing - CNN) yerine **Landmark Tab
 * **Eğitim Mimarisi:** Çıkarılan bu vektör dizileri TensorFlow/Keras ile oluşturulmuş Çok Katmanlı Algılayıcı (MLP/DNN) modeline verilir. Bu sayede model çok hafif (yaklaşık 900 KB) ve inanılmaz hızlı çalışır.
 * **Güven Oranı:** Modelin son test ve doğrulama aşamasında elde ettiği Doğruluk Oranı (Validation Accuracy) **%86.7** olarak ölçülmüştür.
 
+### Model Başarı Grafikleri
+
+**1. Eğitim Geçmişi (Training History)**  
+Aşağıdaki grafik, modelin eğitim (train) ve doğrulama (validation) aşamasındaki öğrenme eğrisini ve kayıp (loss) azalmasını göstermektedir:  
+![Eğitim Geçmişi](output/training_history.png)
+
+**2. Karmaşa Matrisi (Confusion Matrix)**  
+Aşağıdaki matris, modelin hangi işaretleri doğru bildiğini, hangilerini birbiriyle karıştırdığını detaylı bir şekilde göstermektedir:  
+![Karmaşıklık Matrisi](output/confusion_matrix.png)
+
 ### 2. Modelin Eğitimi
 * **`2_train_model.py`**: İşlenen landmark koordinatlarını alır ve TensorFlow / Keras kullanarak derin öğrenme (Deep Learning) modelini eğitir. Bu aşamada modelin başarı oranları ölçülür, grafikleri `output/` klasörüne çizilir ve `.keras` olarak ağırlıkları kaydedilir.
 
