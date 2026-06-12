@@ -1,0 +1,22 @@
+
+TFLite Model Bilgileri (DNN)
+============================
+Dosya: C:\Users\isaca\OneDrive\Desktop\model_training\output\sign_model.tflite
+Boyut: 914.4 KB
+
+Giriş:
+  - Şekil: [  1 126]
+  - Tip  : <class 'numpy.float32'>
+
+Çıkış:
+  - Şekil: [ 1 31]
+  - Tip  : <class 'numpy.float32'>
+
+Keras Boyutu  : 2.75 MB
+TFLite Boyutu : 914.4 KB
+Küçülme Oranı : 3.1×
+
+Flutter Entegrasyon Notu:
+  - Giriş boyutu: [1, 126]  (batch=1, features=126)
+  - Buffer'a (geçmişe) gerek YOK. Anlık kareyi gönderin.
+  - Sol el(63) + Sağ el(63) = 126 değer
